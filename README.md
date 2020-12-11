@@ -26,29 +26,29 @@ Consider two users Alice and Bob who want to communicate secretly using binary e
 
 If proper analysis is done to find out the timing of the message displayed and when it goes away, another app say by name PiggyBackWhatsApp can be developed, which as a sender takes a text, encodes it and types characters in WhatsApp to send a message to Bob at proper time and at the receiver end looks at this message “typing…” spread across time. Using these the actual communication can happen by piggybacking on WhatsApp.
 Impact:
-1) If this covert channel is taken care of, WhatsApp can be a more Trustworthy application for private (preventing illicit communication) and commercial communication(not involving in corporate espionage). Because ordinary private and commercial users cannot use/afford tapping mobile network data and its analysis under normal circumstances.
-2) Analysis of this innocuous looking data is cumbersome.
+   1) If this covert channel is taken care of, WhatsApp can be a more Trustworthy application for private (preventing illicit communication) and commercial communication(not involving in corporate espionage). Because ordinary private and commercial users cannot use/afford tapping mobile network data and its analysis under normal circumstances.
+   2) Analysis of this innocuous looking data is cumbersome.
 Remember that all the other data that goes through WhatsApp is different than this, as it follows the non-repudiation principle of security.
 Action:
 If this covert channel is considered risky by Whatsapp, it has the following options after being notified:
-" a) We can eliminate it by modifying the system implementation
- b) We can reduce the bandwidth by introducing noise into the channel
- c) we can monitor it for patterns of usage that indicate someone is trying to exploit it." [3]
+   "a) We can eliminate it by modifying the system implementation
+    b) We can reduce the bandwidth by introducing noise into the channel
+    c) we can monitor it for patterns of usage that indicate someone is trying to exploit it." [3]
 
 One of the perspectives of taking the above options:
-Option A:
-Action: Removing the “typing...” message
-Advantage: Removal of the covert channel
-Risk: The augmented reality is lost
-Option B: 
-Action: “typing...” message is displayed for a random amount of time, and not for a  constant time period. 
-Advantage: Covert channel bandwidth is decreased, and it can become useless.
-Risk: There will be a slight change in the augmented reality
-Option C:
-(WhatsApp is good at blocking users using scripting api’s after it finds them abusing it. But DON’T KNOW whether the messages related to this covert channel go through WhatsApp servers to analyze patterns...)
-Action: Find patterns in traffic that are using this covert channel, which is cumbersome and block the users.
-Advantage: The “typing...” augmentation of reality remains intact.
-Risk: Cumbersome per user blocking.
+   1) Option A:
+   Action: Removing the “typing...” message
+   Advantage: Removal of the covert channel
+   Risk: The augmented reality is lost
+   2) Option B: 
+   Action: “typing...” message is displayed for a random amount of time, and not for a  constant time period. 
+   Advantage: Covert channel bandwidth is decreased, and it can become useless.
+   Risk: There will be a slight change in the augmented reality
+   3) Option C:
+   (WhatsApp is good at blocking users using scripting api’s after it finds them abusing it. But DON’T KNOW whether the messages    related to this covert channel go through WhatsApp servers to analyze patterns...)
+   Action: Find patterns in traffic that are using this covert channel, which is cumbersome and block the users.
+   Advantage: The “typing...” augmentation of reality remains intact.
+   Risk: Cumbersome per user blocking.
 
 References:
 1. Common weakness enumeration, CWE-514: Covert Channel, https://cwe.mitre.org/data/definitions/514.html
