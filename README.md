@@ -25,6 +25,12 @@ So, using this feature of WhatsApp, we can communicate using some encoding with 
 Consider two users Alice and Bob who want to communicate secretly using binary encoding, i.e., 1s and 0s. When Alice wants to send a 1 to Bob, he will type a character and waits for some time. Bob will see a message “typing…” for a certain period of time. He stops for a “certain period of time” if he wants to send a 0.
 
 If proper analysis is done to find out the timing of the message displayed and when it goes away, another app or a high bandwidth script can be developed, which as a sender takes a text, encodes it and types characters in WhatsApp to send a message to Bob at proper time and at the receiver end looks at this message “typing…” spread across time. Using these the actual communication can happen by piggybacking on WhatsApp.
+
+The two scripts, Sender: ![./wa_final.py](wa_final.py) and Receiver: ![wa_rec.py](wa_rec.py) are a proof of concept of this covert channel. 
+Preview of the video showing the scripts in action is: 
+
+![whatsapp scripts in action](./whatsapp_inaction.gif)
+
 Impact:
    1) If this covert channel is taken care of, WhatsApp can be a more Trustworthy application for private (preventing illicit communication) and commercial communication(not involving in corporate espionage). Because ordinary private and commercial users cannot use/afford tapping mobile network data and its analysis under normal circumstances.
    2) Analysis of this innocuous looking data is cumbersome.
