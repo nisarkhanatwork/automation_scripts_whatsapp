@@ -1,14 +1,21 @@
-# automation_scripts_whatsapp
-To confirm low bandwidth steganography channel in whatsapp
-The sender and receiver automation test scripts for Android phones demonstrates the feasibility of this low bandwidth channel:
+Covert channel in WhatsApp
+--------------------------
+
+Abstract
+---------
+
+To confirm low bandwidth steganography channel in whatsapp, the sender and receiver automation test scripts for Android phones demonstrates the feasibility of this low bandwidth channel.
 
 Frameworks: appium ( test automation framework for Android apps), Selenium.
+
 Python libraries: appium-python-client, selenium 
+
 Other tools/software: adb, nodejs
+
 OS: Windows Host OS ( for Phone1), Ubuntu Guest OS (for Phone 2)
 
-Covert Channel in WhatsApp
---------------------------
+Description
+-----------
 "A covert channel is a path that can be used to transfer information in a way not intended by the system's designers. Typically the system has not given authorization for the transmission and has no knowledge of its occurrence."[1]
 
 An example of a covert channel that can be found inside the CPU is that a sender will issue an instruction at some execution port eg., ALU to send a bit 1 and on the reciever side, the latency is measured to execute an instruction on the same port. If the latency is high, it means a 1-bit and 0-bit otherwise. This channel is used to stealthily transfer data between two processes of two different users.
