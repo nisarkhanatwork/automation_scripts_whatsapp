@@ -40,8 +40,8 @@ Impact:
 -------
 If this covert channel is taken care of, WhatsApp can be a more Trustworthy application for private (preventing illicit communication) and commercial communication(not involving in corporate espionage). Because ordinary private and commercial users cannot use/afford tapping mobile network data and its analysis under normal circumstances.
 
-Action:
--------
+Conclusion:
+----------
 If this covert channel is considered risky by Whatsapp, it has the following potential options after being notified:
 
 a) It can eliminate it by removing this "typing..." message display feature.
