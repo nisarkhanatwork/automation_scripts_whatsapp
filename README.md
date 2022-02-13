@@ -43,6 +43,7 @@ If this covert channel is taken care of, WhatsApp can be a more Trustworthy appl
 Action:
 -------
 If this covert channel is considered risky by Whatsapp, it has the following potential options after being notified:
+
 a) It can eliminate it by removing this "typing..." message display feature.
 
    Advantage: Removal of the covert channel
