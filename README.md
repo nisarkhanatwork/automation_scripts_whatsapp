@@ -9,7 +9,7 @@ An example of a covert channel that can be found in a computer system at the low
 
 Indeed, covert channels are proliferating as new communication applications and communication infrastructures are built. Presence of a covert channel weakness in messenger applications can effect the operational security of organizations. And for private users, its potential for illicit use can lead to loss of trust. If proper countermeasures are taken, the misuse of the system can be prevented and the prevention of this makes an application a more Trusted System.
 
-In this article to confirm low bandwidth steganography channel in whatsapp, the sender and receiver automation test scripts for Android phones are developed and the corresponding video of the scripts in action is also uploaded.
+In this article we take one(out of many) feature(s) of an exmaple messgenger application, whatsapp, and confirm low bandwidth steganography channel in it.  The sender and receiver automation test scripts for Android phones are developed and the corresponding video of the scripts in action is also shown.
 
 Description
 -----------
